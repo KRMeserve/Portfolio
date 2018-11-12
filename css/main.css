@@ -26,6 +26,7 @@ body {
     padding-right: 35%;
     text-align: right;
     color: white;
+    margin-bottom: 400px;
 }
 a {
     color: white;
@@ -52,9 +53,38 @@ h1 {
 .footer {
     /* position: absolute; */
     display: flex;
-    margin-top: 400px;
+    margin-top: 100px;
     padding: 20px;
     background-color: #3F3F3F;
     color: white;
     justify-content: space-between;
+}
+.projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.projectsContainer img {
+    height: 275px;
+    width: 450px;
+    padding: 15px;
+}
+.projectsContainer img:hover {
+    cursor: pointer;
+}
+.my-work {
+    padding-top: 100px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.nav-bar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-bar a {
+    transition: .3s;
 }
