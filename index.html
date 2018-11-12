@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="MyPortfolio">
     <head>
         <meta charset="utf-8">
         <title>Kyle Meserve</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+        <script src="js/app.js"></script>
     </head>
-    <body>
-        <div class="main">
-            <h3 class="first-h3">Hi, I'm</h3>
-            <h1>Kyle Meserve.</h1>
-            <h3>I'm a web developer based in<br>Indianapolis, IN.</h3>
-            <a href="#">See my work</a>
-            <a href="#">Request my resume</a>
-            <a href="#">About me</a>
-        </div>
-        <div class="footer">
-            <div class="social-media">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-            <div class="credits">
-                © 2018 | Designed by Tamara Fedde
-            </div>
-        </div>
+    <body  ng-controller="PortfolioController as ctrl" ng-include="ctrl.pagePath">
     </body>
 </html>
